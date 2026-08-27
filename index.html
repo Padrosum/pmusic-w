@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="pmusic is a fast, keyboard-driven music player for the terminal." />
-    <title>pmusic — your library, in the flow</title>
+    <meta name="description" content="pmusic is a local-first, privacy-friendly, free software music player for the terminal." />
+    <title>pmusic — local music, in the flow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -32,6 +32,21 @@
       </header>
 
       <main id="top">
+        <section class="install install-top section-pad" id="install">
+          <div class="section-kicker">00 / START HERE</div>
+          <div class="install-layout">
+            <div class="install-copy"><h2>Start local.<br /><span>Stay private.</span></h2><p>Your music stays on your machine. Pick an install method, then point pmusic at your own library.</p><div class="platform-note"><span class="platform-dot"></span> No account · no tracking · GPL-3.0</div></div>
+            <div class="install-terminal">
+              <div class="install-tabs"><button class="install-tab active" data-command="quick">Quick install</button><button class="install-tab" data-command="go">With Go</button><button class="install-tab" data-command="source">Source</button></div>
+              <div class="code-block"><div class="code-label"><span id="code-label">TERMINAL</span><button class="copy-button" type="button" data-copy-target="install-command">Copy <span>⧉</span></button></div><code id="install-command"><span class="code-prompt">$</span> curl -fL https://github.com/Padrosum/pmusic/releases/download/edge/pmusic-linux-amd64 \
+  -o pmusic-linux-amd64
+ <span class="code-prompt">$</span> sudo install -m 0755 pmusic-linux-amd64 /usr/local/bin/pmusic
+ <span class="code-prompt">$</span> pmusic --version</code></div>
+              <div class="install-foot"><span>Linux x86-64 quick install</span><a href="https://github.com/Padrosum/pmusic#installation" target="_blank" rel="noreferrer">Full installation guide ↗</a></div>
+            </div>
+          </div>
+        </section>
+
         <section class="hero section-pad">
           <div class="hero-copy">
             <div class="eyebrow"><span class="live-dot"></span> OPEN SOURCE · TERMINAL NATIVE</div>
@@ -94,10 +109,10 @@
         </section>
 
         <section class="intro section-pad" id="workflow">
-          <div class="section-kicker">01 / THE IDEA</div>
+          <div class="section-kicker">01 / LOCAL FIRST</div>
           <div class="intro-grid">
-            <h2>Your music library,<br /><span>without the detour.</span></h2>
-            <div class="intro-text"><p>pmusic keeps playback close to the work. Point it at a folder, pick a track, and move through your collection with the same muscle memory you use everywhere else.</p><a class="text-link" href="#features">Explore the toolkit <span>↓</span></a></div>
+            <h2>Your library,<br /><span>your boundaries.</span></h2>
+            <div class="intro-text"><p>pmusic is local-first by design. It reads the folders you choose, keeps your queue and listening stats on your machine, and never asks you to create an account.</p><div class="privacy-proof"><div><strong>01</strong><span>Local files</span></div><div><strong>02</strong><span>No tracking</span></div><div><strong>03</strong><span>Open source</span></div></div><div class="open-source-note"><span>FREE SOFTWARE / GPL-3.0</span><strong>Inspect the code. Fork the flow.</strong></div><a class="text-link" href="#features">Explore the toolkit <span>↓</span></a></div>
           </div>
         </section>
 
@@ -126,21 +141,6 @@
               <p>Local listening stats for time, starts, skips, artists, and top tracks.</p>
               <div class="mini-bars"><span style="height: 32%"></span><span style="height: 58%"></span><span style="height: 44%"></span><span style="height: 76%"></span><span style="height: 62%"></span><span style="height: 92%"></span><span style="height: 72%"></span></div>
             </article>
-          </div>
-        </section>
-
-        <section class="install section-pad" id="install">
-          <div class="section-kicker">03 / GET STARTED</div>
-          <div class="install-layout">
-            <div class="install-copy"><h2>Less setup.<br /><span>More listening.</span></h2><p>Install the edge build on Linux x86-64, or build pmusic from source with Go. Your first launch takes care of the rest.</p><div class="platform-note"><span class="platform-dot"></span> Linux x86-64 quick install</div></div>
-            <div class="install-terminal">
-              <div class="install-tabs"><button class="install-tab active" data-command="quick">Quick install</button><button class="install-tab" data-command="go">With Go</button><button class="install-tab" data-command="source">Source</button></div>
-              <div class="code-block"><div class="code-label"><span id="code-label">TERMINAL</span><button class="copy-button" type="button" data-copy-target="install-command">Copy <span>⧉</span></button></div><code id="install-command"><span class="code-prompt">$</span> curl -fL https://github.com/Padrosum/pmusic/releases/download/edge/pmusic-linux-amd64 \
-  -o pmusic-linux-amd64
-<span class="code-prompt">$</span> sudo install -m 0755 pmusic-linux-amd64 /usr/local/bin/pmusic
-<span class="code-prompt">$</span> pmusic --version</code></div>
-              <div class="install-foot"><span>Requires Go 1.26.3+ for source builds</span><a href="https://github.com/Padrosum/pmusic#installation" target="_blank" rel="noreferrer">Full installation guide ↗</a></div>
-            </div>
           </div>
         </section>
 
